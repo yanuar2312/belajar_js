@@ -16,9 +16,12 @@
         document.write("<ol>");
 
         // menggunakan perualangan untuk mencetak semua isi array
-        for(let i = 0; i < products.length; i++){
-            document.write(`<li> ${ products[i] }</li>`);
-        }
+        products.forEach((data) => {
+            document.write(`<li>${data}</li>`)
+        })
+        // for(let i = 0; i < products.length; i++){
+        //     document.write(`<li> ${ products[i] }</li>`);
+        // }
         document.write("</ol>");
     </script>
     <br>
