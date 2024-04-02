@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semua tentang array</title>
+</head>
+<body>
+    <script>
+        //array
+        var products = ["Lemari", "Kaca", "Kasur", "Tikar"];
+        var products2 = ["Lemari", "Kaca", "Kasur", "Tikar"];
+        const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        var products4 = ["Lemari", "Kaca", "Kasur", "Tikar"];
+        var alfabet = ['c', 'r', 'i', 'm', 'l', 'z', 'a', 'p'];
+
+        //hapus dengan kasur splice
+        products.splice(2,1);
+        document.write("Nama produk : " + products);
+        document.write("<br>");
+        
+        //menggangti isi array
+        products2[1] = "Televisi";
+        document.write("Nama produk : " + products2);
+        document.write("<br>");
+        
+        //mengambil sebagian data saja
+        const filteredArray = angka.filter((item) => {return item % 2 ===0});
+        document.write(filteredArray);
+        document.write("<br>");
+
+        //includes = mengecek data apakah sebuah data ada dalam array atau tidak.
+        var adaLemari = products4.includes("Lemari");
+        document.write(adaLemari)
+        document.write("<br>");
+
+        var adaTelevisi = products4.includes("Televisi");
+        document.write(adaTelevisi)
+        document.write("<br>");
+
+        //metode sort()
+        document.write(alfabet.sort());
+
+    </script>
+    <br>
+    <a href="../index.html">Back to menu</a>
+    
+</body>
+</html>
