@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat style dengan DOM</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus exercitationem quos dolores similique dolor numquam corporis commodi minima repellendus soluta est rerum, veritatis nihil. Odit, perferendis quaerat nihil voluptatibus eum incidunt deleniti maxime dolores vel?</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus exercitationem quos dolores similique dolor numquam corporis commodi minima repellendus soluta est rerum, veritatis nihil. Odit, perferendis quaerat nihil voluptatibus eum incidunt deleniti maxime dolores vel?</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus exercitationem quos dolores similique dolor numquam corporis commodi minima repellendus soluta est rerum, veritatis nihil. Odit, perferendis quaerat nihil voluptatibus eum incidunt deleniti maxime dolores vel?</p>
+
+    <script>
+            var paragraf = document.getElementsByClassName("paragraf");
+            setInterval(function(){
+                paragraf[0].style.color = "red";
+                paragraf[1].style.color = "green";
+                paragraf[2].style.color = "blue";
+            
+
+            setTimeout(function(){
+                paragraf[0].style.color = "black";
+                paragraf[1].style.color = "black";
+                paragraf[2].style.color = "black";
+            }, 800)
+        }, 800);        
+    </script>
+    <a href="../index.html">Back to menu</a>
+</body>
+</html>
